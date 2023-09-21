@@ -3,7 +3,7 @@ import Phone_Image from "../assets/Phone_Image.svg";
 import { DATA_URL } from "../Consants";
 import { useEffect, useState } from "react";
 import { MONTH_NAMES } from "../Consants";
-import { Active, Completed, Cancelled } from "./Active";
+import { Active, Completed, Cancelled, Pagination } from "./Active";
 
 const Booking = () => {
   const [combinedData, setCombinedData] = useState([]);
@@ -83,7 +83,8 @@ const Booking = () => {
       </h1>
 
       <div className="flex flex-col gap-y-6 h-full">
-        <div className="flex border-b-2 h-10 gap-x-24 font-medium text-black text-opacity-70 [&>*]:w-24 [&>*]:flex [&>*]:justify-center">
+        <div className="flex border-b-2 h-10 gap-x-24 font-medium text-black text-opacity-70 [&>*]:w-24 [&>*]:flex 
+        [&>*]:justify-center">
           <button onClick={() => handleClick('active')} className={` ${activeStyle}`}>Active</button>
           <button onClick={() => handleClick('completed')} className={` ${completedStyle}`}>Completed</button>
           <button onClick={() => handleClick('cancelled')} className={` ${cancelledStyle}`}>Cancelled</button>
@@ -99,13 +100,14 @@ const Booking = () => {
             <div>Payment Mode</div>
           </div>
           {value==='active' &&
-          <Active active={active}/>
+          // <Active active={active}/>
+          <Pagination data={active} type='active'/>
             }
           {value==='completed' &&
-          <Completed completed={completed}/>
+          <Pagination data={completed} type='completed'/>
             }
           {value==='cancelled' &&
-          <Cancelled cancelled={cancelled}/>
+          <Pagination data={cancelled} type='cancelled'/>
             }
         </div>
       </div>
