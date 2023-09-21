@@ -17,7 +17,7 @@ const SideBar = () => {
           <img src={Slider_Item} className='w-64' alt='image'/>
           <div
             className="w-full flex flex-col [&>*]:w-full [&>*]:flex  [&>*]:justify-start [&>*]:px-8 
-          [&>*]:h-12 text-white text-lg gap-y-1"
+          [&>*]:h-12 text-white text-lg"
           >
             <div className="hover:bg-[#D9D9D9] hover:bg-opacity-20 cursor-pointer">
               <div className="w-48 flex gap-x-4 items-center ">
