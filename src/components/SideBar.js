@@ -7,8 +7,8 @@ import Slider_Item from "../assets/Slider_Item.svg";
 
 const SideBar = () => {
   return (
-    <div className="bg-gradient-to-b from-[#EB6B9D] via-[#EB6B9D] to-[#FF5757] h-screen w-1/5 flex justify-center">
-      <div className="h-screen w-full border border-black flex flex-col py-5">
+    <div className="bg-gradient-to-b from-[#EB6B9D] via-[#EB6B9D] to-[#FF5757] h-screen w-96 flex justify-center">
+      <div className="h-screen w-full flex flex-col py-5">
         <div className="w-full flex flex-col items-center gap-y-8">
           <span className="flex justify-star w-4/5 mb-5">
             {" "}
