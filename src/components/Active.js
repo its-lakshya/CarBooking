@@ -29,7 +29,7 @@ export const Pagination = ({ data, type }) => {
       {type === "active" && <Active active={currentData} />}
       {type === "completed" && <Completed completed={currentData} />}
       {type === "cancelled" && <Cancelled cancelled={currentData} />}
-      <div className="flex items-center justify-center gap-x-4 text-xs text-black text-opacity-70 mt-4">
+      <div className=" flex items-center justify-center gap-x-4 text-xs text-black text-opacity-70 mt-4">
         <button onClick={prevPage} disabled={currentPage === 1}>
           <img className="w-6" src={BackButton_Image} alt="image" />
         </button>

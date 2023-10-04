@@ -76,7 +76,7 @@ const Booking = () => {
   }
 
   return (
-    <div className="w-[33rem] m-10 flex flex-col gap-y-10">
+    <div className="w-[33rem] m-10 flex flex-col gap-y-10 max-:w-[20rem]">
       <h1 className="text-[1.7rem] font-semibold flex gap-x-4">
         View Bookings
         <img src={Phone_Image} alt="image" />
